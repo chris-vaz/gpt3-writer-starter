@@ -6,9 +6,10 @@ const configuration = new Configuration({
 
 const openai = new OpenAIApi(configuration);
 
-const basePromptPrefix = `Please provide advice or guidance on how to 
-improve mental health or well-being, based on your 
-professional experience as a therapist or psychologist: `;
+const basePromptPrefix = `Please provide personalized advice or guidance on 
+how to improve mental health or well-being, 
+based on your professional experience as a therapist or 
+psychologist: `;
 
 const generateAction = async (req, res) => {
     // Run first prompt
