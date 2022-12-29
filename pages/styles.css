@@ -35,7 +35,7 @@ body {
     gap: 64px;
 }
 
-.header {    
+.header {
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -56,13 +56,16 @@ body {
     line-height: 1.2em;
     text-align: center;
     margin: 0;
+    background: -webkit-linear-gradient(#3EEB9A, #0079D1);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .header-subtitle h2 {
     font-size: 20px;
     font-style: normal;
     font-weight: 400;
-    text-align:center;
+    text-align: center;
     line-height: 1.4em;
     color: rgba(255, 255, 255, 0.75);
 }
@@ -120,7 +123,7 @@ textarea {
 
 
 .prompt-box:focus {
-    border-color:rgba(255, 255, 255, 0.75)
+    border-color: rgba(255, 255, 255, 0.75)
 }
 
 
@@ -173,7 +176,7 @@ textarea {
 .generate-button {
     place-content: flex-start;
     align-items: flex-start;
-    background-color: rgb(255, 79, 18);
+    background-image: linear-gradient(to right, #3EEB9A 51%, #0079D1 100%);
     border-radius: 100px;
     display: flex;
     flex: 0 0 auto;
@@ -201,6 +204,8 @@ textarea {
 .generate p {
     color: rgb(255, 255, 255);
     margin: 0;
+    font-weight: 600;
+    color: black;
 }
 
 .loading {
@@ -373,7 +378,8 @@ textarea {
         text-align: center;
     }
 
-    .key-stroke, .or {
+    .key-stroke,
+    .or {
         display: none;
     }
 
@@ -393,13 +399,13 @@ textarea {
 
 
 
- /* Loading ring animation */
+/* Loading ring animation */
 .loader {
     width: 18px;
     height: 18px;
     border-radius: 50%;
     display: inline-block;
-    border-top: 2px solid #FFF;
+    border-top: 2px solid black;
     border-right: 2px solid transparent;
     box-sizing: border-box;
     animation: rotation 1s linear infinite;
@@ -413,4 +419,16 @@ textarea {
     100% {
         transform: rotate(360deg);
     }
+}
+
+.footer {
+    min-height: calc(1vh - 1px);
+    width: 100%;
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+.colorfill a{
+    color:#0079D1;
+    text-decoration: none;
 }

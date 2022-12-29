@@ -1,6 +1,5 @@
 import Head from 'next/head';
 import Image from 'next/image';
-import buildspaceLogo from '../assets/buildspace-logo.png';
 import { useState } from 'react';
 
 const Home = () => {
@@ -45,7 +44,7 @@ const Home = () => {
             <h1>Therapy Sense</h1>
           </div>
           <div className="header-subtitle">
-            <h2>Therapy Sense is a virtual therapy chatbot that provides support and resources for mental health and emotional well-being.</h2>
+            <h2>Therapy Sense is a virtual therapy AI that provides support and resources for mental health and emotional well-being.</h2>
           </div>
         </div>
         <div className="prompt-container">
@@ -70,17 +69,8 @@ const Home = () => {
         </div>
         )}
       </div>
-      <div className="badge-container grow">
-        <a
-          href="https://buildspace.so/builds/ai-writer"
-          target="_blank"
-          rel="noreferrer"
-        >
-          <div className="badge">
-            <Image src={buildspaceLogo} alt="buildspace logo" />
-            <p>build with buildspace</p>
-          </div>
-        </a>
+      <div className='footer'>
+          <p>Developed by <span class="colorfill"><a href="https://www.linkedin.com/in/chris-vaz/">Chris Vaz</a></span>© 2022-2023</p>
       </div>
     </div></div>
   );
